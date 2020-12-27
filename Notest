@@ -1,0 +1,40 @@
+{
+authors{
+  name
+  age
+  books{
+    name
+    genre
+  }
+}
+}
+
+mutation{
+  addBook(name:"Sneha's First Book",genre:"Thriller",authorId:"5fd62d262e9a362285450057"){
+    name
+    genre
+  }
+}
+
+mutation{
+  addAuthor(name:"Sneha",age:25){
+    name
+    age
+
+  }
+}
+
+
+{
+	book(id:"5fd62d3d2e9a362285450058"){
+    name
+    genre
+    author{
+      name
+      age
+    }
+  }
+}
+
+
+Apollo: Helps in creating a query and bind to some of the component
